@@ -2,6 +2,10 @@ body {
 	background: linear-gradient(skyblue, lightgreen);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+
+	/* background-image: url(images/crops.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; */
 }
 
 textarea {
@@ -20,6 +24,8 @@ h1 {
 p {
 	text-align: center;
 	word-spacing: 50%;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: black;
 }
 
 hr {
@@ -41,4 +47,16 @@ img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+input {
+	border-radius: 25px;
+	padding: 10px;
+	color: rgb(27, 158, 27);
+	background-color: greenyellow;
+	font-family: monospace;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border-color: black;
 }

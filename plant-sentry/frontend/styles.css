@@ -47,6 +47,7 @@ img {
 
 input {
 	border-radius: 25px;
+	border-style: inset;
 	padding: 10px;
 	color: rgb(27, 158, 27);
 	background-color: greenyellow;

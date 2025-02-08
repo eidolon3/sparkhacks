@@ -2,10 +2,6 @@ body {
 	background: linear-gradient(skyblue, lightgreen);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-
-	/* background-image: url(images/crops.jpg);
-	background-repeat: no-repeat;
-	background-size: cover; */
 }
 
 textarea {

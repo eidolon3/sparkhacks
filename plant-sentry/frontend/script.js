@@ -54,14 +54,15 @@ function analyze() {
             // Get response and show it
             let data = await response.json();
             let formattedText = data.analysis
-            
                 .replace(/\n/g, '<br><br>')  // Replace newlines with double line breaks
                 .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')  // Bold text
-                .replace(/### (.*)/g, '<h3>$1</h3>')
-                .replace(/## (.*)/g, '<h3>$1</h3>')
-
-                .replace(/# (.*)/g, '<h2>$1</h2>');  // Headers
-                
+                .replace(/#{1,5}\s*(.*?)(?=\n|$)/g, '<h3>$1</h3>')  // Replace any number of # with h3
+                .replace(/\#{5}/g, '')  // Remove any remaining ##### patterns
+                .replace(/\#{4}/g, '')  // Remove any remaining #### patterns
+                .replace(/\#{3}/g, '')  // Remove any remaining ### patterns
+                .replace(/\#{2}/g, '')  // Remove any remaining ## patterns
+                .replace(/\#{1}/g, ''); // Remove any remaining # patterns
+                            
 
             document.getElementById('result').innerHTML = formattedText;
             

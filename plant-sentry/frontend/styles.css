@@ -1,5 +1,13 @@
-* {
-	background-color: rgb(rgb(177, 225, 242), green, blue);
+body {
+	background: linear-gradient(skyblue, lightgreen);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+textarea {
+	background: linear-gradient(skyblue, lightgreen);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 h1 {
@@ -11,6 +19,7 @@ h1 {
 
 p {
 	text-align: center;
+	word-spacing: 50%;
 }
 
 hr {
@@ -23,7 +32,9 @@ button {
 	color: rgb(27, 158, 27);
 	background-color: greenyellow;
 	font-family: monospace;
-	translate: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 img {

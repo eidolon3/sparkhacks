@@ -36,7 +36,9 @@ function analyze() {
             let formattedText = data.analysis
                 .replace(/\n/g, '<br><br>')  // Replace newlines with double line breaks
                 .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')  // Bold text
+                .replace(/###(.*)/g, '<h3>$1</h3>')
                 .replace(/# (.*)/g, '<h2>$1</h2>');  // Headers
+                
 
             document.getElementById('result').innerHTML = formattedText;
             

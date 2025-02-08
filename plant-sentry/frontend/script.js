@@ -16,6 +16,10 @@ function analyze() {
         return;
     }
 
+    const scanButton = document.getElementById("scanButton");
+    scanButton.disabled = true;
+    scanButton.innerText = "Scanning... ";
+
     // Read the file
     let reader = new FileReader();
     
@@ -34,9 +38,12 @@ function analyze() {
             // Get response and show it
             let data = await response.json();
             let formattedText = data.analysis
+            
                 .replace(/\n/g, '<br><br>')  // Replace newlines with double line breaks
                 .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')  // Bold text
-                .replace(/###(.*)/g, '<h3>$1</h3>')
+                .replace(/### (.*)/g, '<h3>$1</h3>')
+                .replace(/## (.*)/g, '<h3>$1</h3>')
+
                 .replace(/# (.*)/g, '<h2>$1</h2>');  // Headers
                 
 
@@ -46,6 +53,13 @@ function analyze() {
             // If something goes wrong, show error
             document.getElementById('result').innerHTML = "Oops, something went wrong!";
         }
+            scanButton.disabled = false;
+            scanButton.innerText = 'Scan Plant';
+
+        
+
+        
+
     }
 
     // Start reading the file

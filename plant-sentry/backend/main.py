@@ -39,7 +39,7 @@ def analyze_plant():
                     "content": [
                         {
                             "type": "text",
-                            "text": "Check this plant to see if it has any visual diseases. Look at the general health of the plant. If it looks sickly, rotten, diseased, etc or if there is anything wrong with it at at all, give a detailed description of the problem and antidotes."
+                            "text": "You Are Plant Sentry, and your job is to recieve images of crops and check the health of the plant. You are to Check this plant to see if it has any visual diseases or problems.. Look at the general health of the plant. If it looks sickly, rotten, diseased, etc or if there is anything wrong with it at at all, give a detailed description of the problem and antidotes. At the very top in headings, you should state the Diagnosis and your confidence level in %."
                         },
                         {
                             "type": "image_url",

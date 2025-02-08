@@ -1,0 +1,44 @@
+body {
+	background: linear-gradient(skyblue, lightgreen);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+textarea {
+	background: linear-gradient(skyblue, lightgreen);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+h1 {
+	text-align: center;
+	color: green;
+	font-family: monospace;
+	text-shadow: 2px 2px greenyellow;
+}
+
+p {
+	text-align: center;
+	word-spacing: 50%;
+}
+
+hr {
+	color: green;
+}
+
+button {
+	border-radius: 25px;
+	padding: 20px;
+	color: rgb(27, 158, 27);
+	background-color: greenyellow;
+	font-family: monospace;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

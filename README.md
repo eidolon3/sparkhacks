@@ -1,6 +1,6 @@
 # Plant Sentry
 
-CD into plant-sentry/backend, and run 
+`cd` into plant-sentry/backend, and run 
 
 `"python main.py"`
 

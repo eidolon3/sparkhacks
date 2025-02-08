@@ -4,6 +4,22 @@ function clearAll() {
     document.getElementById('image').value = '';
     // Clear the results
     document.getElementById('result').innerHTML = '';
+    document.getElementById('imagePreview').src = '';
+
+}
+
+function previewImage() {
+    const file = document.getElementById('image').files[0];
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+        const imagePreview = document.getElementById('imagePreview');
+        imagePreview.src = e.target.result;
+    };
+
+    if (file) {
+        reader.readAsDataURL(file);
+    }
 }
 
 function analyze() {

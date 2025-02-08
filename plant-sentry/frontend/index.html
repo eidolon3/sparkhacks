@@ -14,13 +14,16 @@
 
     <hr>
     <p>Put in an image of a plant and AI will analyze it!</p>
-    <input type="file" id="image" accept="image/*">
+    <input type="file" id="image" accept="image/*" onchange="previewImage()">
     <button id="scanButton" onclick="analyze()">Scan Plant</button>
 
     <button onclick="clearAll()">Clear</button>
 
     <hr>
     
+    <div id="imagePreviewContainer" style="text-align:center; margin-top: 20px;">
+      <img id="imagePreview" style="max-width: 300px; max-height: 300px;"  /></div>
+
     <div id="result"></div>
     <script src="script.js"></script>
 

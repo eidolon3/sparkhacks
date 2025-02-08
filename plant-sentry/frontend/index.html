@@ -1,14 +1,23 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="The website to determine the type of disease a plant has using AI">
+=======
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The website to determine the type of disease a plant has using AI">
+>>>>>>> branch3
 	<title>Plant Sentry</title>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
 </head>
+<<<<<<< HEAD
 
 <body>
   <h1>PlantSentry</h1>
@@ -32,4 +41,28 @@
 </body>
 
 
+=======
+<body>
+    <h1>Plant Sentry!</h1>
+    <img src="images/peashooter.webp" width="200" height="200" alt="peashooter">
+
+    <hr>
+    <p>Put in an image of a plant and AI will analyze it!</p>
+    <input type="file" id="image" accept="image/*">
+    <button onclick="analyze()">Scan Plant</button>
+
+    <button onclick="clearAll()">Clear</button>
+
+    <div id="result"></div>
+    <script src="script.js"></script>
+
+    <hr>
+
+    <form action="">
+        <p>
+          <textarea name="AI Response" class="AIResponse" id="AI Response" cols="200" rows="10"></textarea>
+        </p>
+      </form>
+</body>
+>>>>>>> branch3
 </html>

@@ -57,3 +57,15 @@ input {
 	display: block;
 	border-color: black;
 }
+
+video {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+canvas {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
